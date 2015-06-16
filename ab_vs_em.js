@@ -16,6 +16,12 @@ var emailId="GKQ9J8L";
     $(".js-modal-close, .modal-overlay").trigger("click");
   });
 
+  $("#start_email").click(function(e){
+     $("#step1").show();
+     $(".header").hide();
+     $(this).hide();
+  });
+
   $("#goto2").click(function(e){
     e.preventDefault();
     $(".step").hide();
