@@ -69,7 +69,8 @@ body {
     color: #4face0;
 	}
 
-	li{
+	li, .spaced{
    line-height: 1.50; 
 	}
+
 
