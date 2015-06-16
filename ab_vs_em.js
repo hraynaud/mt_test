@@ -16,7 +16,7 @@ var emailId="GKQ9J8L";
     $(".js-modal-close, .modal-overlay").trigger("click");
   });
 
-  $("#start_email").on("click", function(e){
+  $("body").on("click", "#start_email", function(e){
      $("#step1").show();
      $(".header").hide();
      $(this).hide();
