@@ -1,0 +1,75 @@
+body {
+  margin: auto;
+  font-family: "Helvetica Neue", sans-serif;
+  background: white;
+  padding:20px;
+  width:1000px;
+}
+
+  html{
+    background: white;
+  }
+
+  div#section_2 {
+    color: blue;
+  }
+
+  .content{
+    background: whitesmoke;
+    padding:10px 20px;
+    margin-top: 10px;
+  }
+
+  .step{
+    font-size: 24px;
+  }
+
+  .step>h1{
+    font-size: ;20px;
+  }
+
+  .step a {
+    font-size:
+  }
+
+  .section{
+    margin-bottom: 75px;
+    margin-top: 15px;
+  }
+
+  .header {
+    font-size: 24px;
+    margin-bottom: 45px;
+    margin-top: 25px;
+  } 
+
+  a:visited{
+    color: #4face0;
+  }
+  .nav{
+    margin-top: 50px;
+  }
+
+  .btn{
+    background-color: #4face0;
+    color: #FFF;
+    padding: 10px;
+    border: 1px #4face0 solid;
+  }
+  a.btn{
+  color: #FFF;
+  text-decoration: none;
+  }
+
+  #start{
+    font-size: 35px;
+  }
+
+	#survey_code {
+    color: #4face0;
+	}
+
+	li{
+   line-height: 1.50; 
+	}
+
