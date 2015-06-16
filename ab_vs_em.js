@@ -13,7 +13,7 @@ var emailId="GKQ9J8L";
      $("#step1").show();
      $(".header").hide();
      $("#begin").hide();
-    $(".js-modal-close, .modal-overlay").trigger("click");
+    // $(".js-modal-close, .modal-overlay").trigger("click");
   });
 
   $("body").on("click", "#start_email", function(e){
