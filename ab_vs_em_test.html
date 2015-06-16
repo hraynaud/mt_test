@@ -1,25 +1,36 @@
 <html>
   <head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="//cdn.optimizely.com/js/1115133577.js"></script>
     <script src="./ab_vs_em.js"> </script>
+    <script src="./modal.js"> </script>
+<link href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.css" rel="stylesheet" type="text/css">
+
     <link rel="stylesheet" type="text/css" href="./ab_vs_em.css">
+    <link rel="stylesheet" type="text/css" href="./modal.css">
+    <title>Great Place To Work Info </title>
   </head>
   <body>
 
     <div id="optimizely_750474440" class="header">
-      <p>Imagine you are an employee of a GreatPlaceToWork Inc. The director of HR is very proactive about providing employees helpful information on a variety of job-related and personal topics. The HR directory has prepared batinformation for you to review</p>
-         </div>
+      <p class="spaced">Imagine you are an employee at GreatPlaceToWork, Inc.  Your HR director sent you to a board with information you need to read about retirement. Once you open the board, click on the first Tile. Read the information and answer the question at the bottom of it. Complete all 8 Tiles.</p>
+    </div>
 
 
-    <button id="start" class="btn">Review Information</button>
+
+    <a class="js-open-modal btn" href="#" data-modal-id="popup" id="begin"> Begin</a> 
+    <!--button id="start" class="btn" data-modal-id="popup">Click here to Review Information</button-->
     <div class="content">
 
       <div class="section step" id="step1">
-        <h1 ><a href="https://www.air.bo/ard/airbo-survey" target="_blank" >Click here to read and interact with the content.</a></h1>
-        <p>You'll be brought to a new tab but keep this tab open. Once you've finished interacting with the content, return to this tab and click the button below to move to the next step.</p>
+        <!--h1 ><a href="https://www.air.bo/ard/airbo-survey" target="_blank" >Click here to read and interact with the content.</a></h1-->
+
         <div class="nav">
-          <a href="ab_vs_em_test_em_step2.html" class="btn" id="goto2">Goto Content</a>
+          <a href="ab_vs_em_test_em_step2.html" class="btn" id="goto2">Next Step</a>
         </div>
       </div>
 
@@ -46,5 +57,19 @@
       </div>
 
     </div>
+
+    <div id="popup" class="modal-box"> 
+      <header>
+        <a href="#" class="js-modal-close close">x</a>
+        <h3>Please Note: The content will open in another browser tab. Keep this browser tab open  </h3>
+      </header>
+      <div class="modal-body">
+        <h3 ><a href="https://www.air.bo/ard/airbo-survey" target="_blank" id="start" >Got it. Take me to the tiles.</a></h3>
+      </div>
+      <footer>
+        <!--a href="#" class="js-modal-close">Close Button</a-->
+      </footer>
+    </div>
+
   </body>
 </html>
