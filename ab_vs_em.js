@@ -10,8 +10,8 @@ var emailId="GKQ9J8L";
   $(".step").hide();
   $("#step1").show();
 
-  if($("img#email").length!==1){
-    $("#start_tile").show();
+  if($("img#email").length===1){
+    $("#start_tile").hide();
   }
 
 
