@@ -2,7 +2,8 @@ $(function(){
 
 var appendthis =  ("<div class='modal-overlay js-modal-close'></div>");
 
-	$('body').on("click", 'a[data-modal-id]', function(e) {
+	$('body').on('click', 'a[data-modal-id]', function(e) {
+    console.log("hi");
 		e.preventDefault();
     $("body").append(appendthis);
     $(".modal-overlay").fadeTo(500, 0.7);
