@@ -9,15 +9,22 @@ var emailId="GKQ9J8L";
 
   $(".step").hide();
   $("#step1").show();
-  // $("#start").click(function(e){
-  //    $("#step1").show();
-  //    $(".header").hide();
-  //    $("#begin").hide();
-  //   // $(".js-modal-close, .modal-overlay").trigger("click");
-  // });
+
+  if($("img#email").length!==1){
+    $("#start_tile").show();
+  }
+
+
+  $("#start").click(function(e){
+     $("#step1").show();
+     $(".header").hide();
+     $("#begin").hide();
+     $(".js-modal-close, .modal-overlay").trigger("click");
+  });
 
   $("#goto2").click(function(e){
     e.preventDefault();
+     $(".header").hide();
     $(".step").hide();
       $("#step2").show();
   });
