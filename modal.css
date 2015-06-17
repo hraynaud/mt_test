@@ -13,7 +13,7 @@
   top: -10%;
 }
 
-.modal-box .btn {
+.modal-box .btn-gray {
   font-size: 3vmin;
   padding: 0.75em 1.5em;
   background-color: #fff;
@@ -27,14 +27,14 @@
   transition: background-color 1s ease;
 }
 
-.modal-box .btn:hover {
+.modal-box .btn-grey:hover {
   background-color: #ddd;
   -webkit-transition: background-color 1s ease;
   -moz-transition: background-color 1s ease;
   transition: background-color 1s ease;
 }
 
-.modal-box .btn-small {
+.modal-box .btn-grey-small {
   padding: .75em 1em;
   font-size: 0.8em;
 }
