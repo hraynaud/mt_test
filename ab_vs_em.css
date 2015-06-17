@@ -77,3 +77,10 @@ body {
 		display:none;
 	}
 
+	.email-text p {
+    line-height: 1.0;
+	}
+	.email-text p.greeting{
+    margin-bottom:20px;
+	}
+
