@@ -8,19 +8,13 @@ var emailId="GKQ9J8L";
   var emailSurvey = '<script>(function(t,e,s,o){var n,c,r;t.SMCX=t.SMCX||[],e.getElementById(o)||(n=e.getElementsByTagName(s),c=n[n.length-1],r=e.createElement(s),r.type="text/javascript",r.async=!0,r.id=o,r.src=["https:"===location.protocol?"https://":"http://","widget.surveymonkey.com/collect/website/js/O6iOVOPN7x_2FwMk9IDv_2F9TkryrmnssZM0rvLCDZ05_2B7sTLxjQFiop1NLog6FlFKQs.js"].join(""),c.parentNode.insertBefore(r,c))})(window,document,"script","smcx-sdk");</script>';
 
   $(".step").hide();
-  $("#start_email").hide();
-  $("#start").click(function(e){
-     $("#step1").show();
-     $(".header").hide();
-     $("#begin").hide();
-    // $(".js-modal-close, .modal-overlay").trigger("click");
-  });
-
-  $("body").on("click", "#start_email", function(e){
-     $("#step1").show();
-     $(".header").hide();
-     $(this).hide();
-  });
+  $("#step1").show();
+  // $("#start").click(function(e){
+  //    $("#step1").show();
+  //    $(".header").hide();
+  //    $("#begin").hide();
+  //   // $(".js-modal-close, .modal-overlay").trigger("click");
+  // });
 
   $("#goto2").click(function(e){
     e.preventDefault();
@@ -32,7 +26,7 @@ var emailId="GKQ9J8L";
     e.preventDefault();
     $(".step").hide();
 
-    if($("#email_test").length===1 && $("img.email").length===1){
+    if($("img#email").length===1){
      $("#survey").append(emailSurvey); 
      $("#survey_code").text(emailId); 
     }else{
